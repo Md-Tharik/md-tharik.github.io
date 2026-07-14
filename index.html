@@ -171,7 +171,7 @@
         }
     </style>
 
-    <!-- Google Knowledge Graph Schema (Clean URLs) -->
+        <!-- Google Knowledge Graph Schema (Clean URLs & Reverse Founder) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -189,13 +189,16 @@
       ],
       "jobTitle": "Founder",
       "knowsAbout": ["Software Development", "E-commerce", "SaaS", "Logistics Systems"],
-      "founder": {
-        "@type": "Organization",
-        "name": "StoreSnap India",
-        "url": "https://storesnap.in"
+      "@reverse": {
+        "founder": {
+          "@type": "Organization",
+          "name": "StoreSnap India",
+          "url": "https://storesnap.in"
+        }
       }
     }
     </script>
+    
 </head>
 <body>
 
