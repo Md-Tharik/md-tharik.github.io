@@ -94,7 +94,23 @@
     .reveal{opacity:1;transform:none;transition:none;}
     html{scroll-behavior:auto;}
   }
-
+  /* ---------- Fix for Laptop Text Covering Face ---------- */
+  @media (min-width: 800px) {
+    .hero-inner {
+      padding-bottom: 4vw; /* Pushes the entire text block much lower on the screen */
+      max-width: 65%; /* Stops the text from stretching across the center of the screen */
+    }
+    
+    .hero h1 {
+      font-size: clamp(3rem, 6.5vw, 6rem); /* Reduces the massive font size slightly so it fits beautifully on the left */
+    }
+    
+    .hero-tagline {
+      font-size: 1.05rem; /* Slightly smaller tagline for landscape screens */
+      max-width: 480px; 
+    }
+  }
+  
    /* ---------- Nav ---------- */
   header.site-nav{
     position:fixed;
