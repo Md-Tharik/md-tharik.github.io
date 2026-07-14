@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohamed Tharik | Founder of StoreSnap India</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #0a0a0a;
+            --card-bg: #141414;
+            --accent: #3b82f6;
+            --text-main: #f3f4f6;
+            --text-muted: #9ca3af;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 100%;
+            background-color: var(--card-bg);
+            border-radius: 16px;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            border: 1px solid #222;
+        }
+
+        .profile-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid var(--accent);
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 5px;
+            font-weight: 700;
+        }
+
+        .headline {
+            font-size: 1.2rem;
+            color: var(--accent);
+            font-weight: 500;
+            margin-bottom: 15px;
+        }
+
+        .bio {
+            color: var(--text-muted);
+            font-size: 1rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .projects-section {
+            margin-bottom: 40px;
+        }
+
+        .section-title {
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--text-muted);
+            margin-bottom: 20px;
+            text-align: center;
+            font-weight: 600;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .project-card {
+            background-color: #1a1a1a;
+            border: 1px solid #333;
+            border-radius: 12px;
+            padding: 20px;
+            text-align: left;
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent);
+        }
+
+        .project-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: #fff;
+        }
+
+        .project-desc {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            margin-bottom: 15px;
+        }
+
+        .project-link {
+            color: var(--accent);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        .project-link:hover {
+            text-decoration: underline;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .social-btn {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 24px;
+            background-color: #1a1a1a;
+            color: var(--text-main);
+            text-decoration: none;
+            border-radius: 8px;
+            border: 1px solid #333;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+
+        .social-btn:hover {
+            background-color: var(--accent);
+            border-color: var(--accent);
+            color: #fff;
+            transform: translateY(-2px);
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .container { padding: 30px 20px; }
+            h1 { font-size: 2rem; }
+            .social-btn { width: 100%; justify-content: center; }
+        }
+    </style>
+
+    <!-- Google Knowledge Graph Schema (Clean URLs) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Mohamed Tharik",
+      "additionalName": "Tharik",
+      "url": "https://md-tharik.github.io",
+      "image": "https://avatars.githubusercontent.com/u/120616110?v=4", 
+      "sameAs": [
+        "https://www.instagram.com/im_thxrik_",
+        "https://www.facebook.com/share/1DWHS7MDEc/",
+        "https://github.com/Md-Tharik",
+        "https://www.linkedin.com/in/mohamed-tharik-6164531b7",
+        "https://youtube.com/@imthxrik"
+      ],
+      "jobTitle": "Founder",
+      "knowsAbout": ["Software Development", "E-commerce", "SaaS", "Logistics Systems"],
+      "founder": {
+        "@type": "Organization",
+        "name": "StoreSnap India",
+        "url": "https://storesnap.in"
+      }
+    }
+    </script>
+</head>
+<body>
+
+    <div class="container">
+        <div class="profile-header">
+            <!-- Using your GitHub profile picture dynamically -->
+            <img src="https://avatars.githubusercontent.com/u/120616110?v=4" alt="Mohamed Tharik" class="profile-img">
+            <h1>Mohamed Tharik</h1>
+            <p class="headline">Founder of StoreSnap India & Software Creator</p>
+            <p class="bio">Building high-performance, mobile-first solutions. Leveraging a background in logistics to engineer optimized, lightweight digital infrastructure and e-commerce platforms.</p>
+        </div>
+
+        <div class="projects-section">
+            <h2 class="section-title">Current Builds</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3 class="project-title">StoreSnap India</h3>
+                    <p class="project-desc">An ultra-fast, mobile-first e-commerce enablement platform allowing sellers to launch in seconds without coding.</p>
+                    <a href="https://storesnap.in" target="_blank" class="project-link">Visit Platform &rarr;</a>
+                </div>
+                <div class="project-card">
+                    <h3 class="project-title">Web Utilities</h3>
+                    <p class="project-desc">Suite of standalone client-side tools including QuickQR and ARTRES, a visual PDF document designer.</p>
+                    <a href="https://github.com/Md-Tharik" target="_blank" class="project-link">View Repositories &rarr;</a>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="section-title">Connect</h2>
+        <div class="social-links">
+            <a href="https://www.instagram.com/im_thxrik_" target="_blank" class="social-btn">
+                <i class="fab fa-instagram"></i> Instagram
+            </a>
+            <a href="https://youtube.com/@imthxrik" target="_blank" class="social-btn">
+                <i class="fab fa-youtube"></i> YouTube
+            </a>
+            <a href="https://www.linkedin.com/in/mohamed-tharik-6164531b7" target="_blank" class="social-btn">
+                <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
+            <a href="https://github.com/Md-Tharik" target="_blank" class="social-btn">
+                <i class="fab fa-github"></i> GitHub
+            </a>
+            <a href="https://www.facebook.com/share/1DWHS7MDEc/" target="_blank" class="social-btn">
+                <i class="fab fa-facebook"></i> Facebook
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
