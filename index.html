@@ -94,23 +94,7 @@
     .reveal{opacity:1;transform:none;transition:none;}
     html{scroll-behavior:auto;}
   }
-  /* ---------- Fix for Laptop Text Covering Face ---------- */
-  @media (min-width: 800px) {
-    .hero-inner {
-      padding-bottom: 4vw; /* Pushes the entire text block much lower on the screen */
-      max-width: 65%; /* Stops the text from stretching across the center of the screen */
-    }
-    
-    .hero h1 {
-      font-size: clamp(3rem, 6.5vw, 6rem); /* Reduces the massive font size slightly so it fits beautifully on the left */
-    }
-    
-    .hero-tagline {
-      font-size: 1.05rem; /* Slightly smaller tagline for landscape screens */
-      max-width: 480px; 
-    }
-  }
-  
+
    /* ---------- Nav ---------- */
   header.site-nav{
     position:fixed;
@@ -142,6 +126,27 @@
   .nav-links a{opacity:0.75;transition:opacity .3s ease;}
   .nav-links a:hover{opacity:1;}
   @media (max-width:700px){ .nav-links{display:none;} }
+    /* ---------- Fix for Laptop Text & Image Framing ---------- */
+  @media (min-width: 800px) {
+    .hero-media img {
+      object-position: top center; /* Locks the top of the image to the screen edge so tabs/bars don't crop your hair */
+    }
+    
+    .hero-inner {
+      padding-bottom: 2vw; /* Shrunk the bottom padding so it fits nicely in shorter windows */
+      max-width: 55%; /* Shrunk from 65% to keep the text strictly on the left side, away from your face */
+    }
+    
+    .hero h1 {
+      font-size: clamp(3rem, 6.5vw, 6rem); 
+    }
+    
+    .hero-tagline {
+      font-size: 1.05rem; 
+      max-width: 480px; 
+    }
+  }
+
 
   /* ---------- Hero ---------- */
   .hero{
