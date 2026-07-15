@@ -24,7 +24,9 @@
     "https://www.facebook.com/share/1DWHS7MDEc/",
     "https://github.com/Md-Tharik",
     "https://www.linkedin.com/in/mohamed-tharik-6164531b7",
-    "https://youtube.com/@imthxrik"
+    "https://youtube.com/@imthxrik",
+    "https://medium.com/@mdtharik563",
+    "https://dev.to/md_tharik_4dfe8c4b8ab8caf"
   ],
   "jobTitle": "Founder",
   "knowsAbout": ["Software Development", "E-commerce", "SaaS", "Computer Applications"],
@@ -148,7 +150,7 @@
     object-position: top center; 
     transform-origin: top center; 
     filter:grayscale(35%) brightness(0.62) contrast(1.08);
-    transform:scale(1.02); /* Fixed aggressive zoom */
+    transform:scale(1.02); 
     will-change:transform;
   }
 
@@ -234,10 +236,10 @@
   @media (min-width: 800px) and (max-height: 750px) {
     .hero-inner {
       max-width: 55%;
-      padding-bottom: 1.5vw; /* Tucks the text neatly into the bottom corner */
+      padding-bottom: 1.5vw; 
     }
     .hero h1 {
-      font-size: clamp(2.8rem, 5vw, 4.5rem); /* Prevents vertical overflow */
+      font-size: clamp(2.8rem, 5vw, 4.5rem); 
     }
   }
 
@@ -247,7 +249,6 @@
       max-width: 50%;
     }
   }
-
 
   .btn{
     display:inline-flex;
@@ -817,6 +818,8 @@
         <a href="https://www.instagram.com/im_thxrik_" target="_blank" rel="noopener">Instagram <span class="arrow">→</span></a>
         <a href="https://youtube.com/@imthxrik" target="_blank" rel="noopener">YouTube <span class="arrow">→</span></a>
         <a href="https://www.facebook.com/share/1DWHS7MDEc/" target="_blank" rel="noopener">Facebook <span class="arrow">→</span></a>
+        <a href="https://medium.com/@mdtharik563" target="_blank" rel="noopener">Medium <span class="arrow">→</span></a>
+        <a href="https://dev.to/md_tharik_4dfe8c4b8ab8caf" target="_blank" rel="noopener">Dev.to <span class="arrow">→</span></a>
       </div>
     </div>
   </div>
@@ -852,7 +855,6 @@
     window.addEventListener('scroll', function(){
       var y = window.scrollY;
       if(y < window.innerHeight){
-        /* Reduced from 1.08 to 1.02 so JS doesn't override the CSS fix */
         heroImg.style.transform = 'scale(1.02) translateY(' + (y * 0.12) + 'px)'; 
       }
     }, {passive:true});
