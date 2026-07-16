@@ -4,56 +4,91 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="google-site-verification" content="Ad6Ce8Baz8ZEiOEXTj6xfB8QWIJMn_tjEgYPjcPvIo0" />
+
+<!-- FIXED CANONICAL TAG -->
+<link rel="canonical" href="https://mohamedtharik.in/" />
+
+<!-- ROBOTS TAG -->
+<meta name="robots" content="index, follow, max-image-preview:large" />
+
 <title>Mohamed Tharik — Founder, StoreSnap India</title>
 <meta name="description" content="Mohamed Tharik engineers frictionless digital infrastructure for the next generation of commerce. Founder of StoreSnap India, ARTRES, and QuickQR.">
-<link rel="canonical" href="[https://mohamedtharik.in/](https://mohamedtharik.in/)" />
+
+<!-- OPEN GRAPH (FACEBOOK/LINKEDIN) -->
+<meta property="og:title" content="Mohamed Tharik — Founder, StoreSnap India" />
+<meta property="og:description" content="Mohamed Tharik engineers frictionless digital infrastructure for the next generation of commerce. Founder of StoreSnap India, ARTRES, and QuickQR." />
+<meta property="og:url" content="https://mohamedtharik.in/" />
+<meta property="og:type" content="profile" />
+<meta property="og:image" content="https://mohamedtharik.in/mohamed-tharik-founder-storesnap.jpg" />
+
+<!-- TWITTER CARD -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Mohamed Tharik — Founder, StoreSnap India" />
+<meta name="twitter:description" content="Mohamed Tharik engineers frictionless digital infrastructure for the next generation of commerce." />
+<meta name="twitter:image" content="https://mohamedtharik.in/mohamed-tharik-founder-storesnap.jpg" />
+
+<!-- FAVICONS (Ensure you upload a favicon.ico and apple-touch-icon.png to your root directory) -->
+<link rel="icon" href="/favicon.ico" sizes="any" />
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
 <!-- 
   =========================================
-  ADVANCED PERSON SCHEMA (ENTITY CONNECTOR)
+  ADVANCED PERSON & ORGANIZATION SCHEMA
   =========================================
 -->
 <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "@id": "https://mohamedtharik.in/#person",
-  "name": "Mohamed Tharik",
-  "givenName": "Mohamed",
-  "familyName": "Tharik",
-  "additionalName": "Tharik",
-  "url": "https://mohamedtharik.in",
-  "image": "https://mohamedtharik.in/mohamed-tharik-founder-storesnap.jpg", 
-  "jobTitle": "Founder",
-  "worksFor": {
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "@id": "https://mohamedtharik.in/#person",
+    "name": "Mohamed Tharik",
+    "givenName": "Mohamed",
+    "familyName": "Tharik",
+    "additionalName": "Tharik",
+    "url": "https://mohamedtharik.in",
+    "image": "https://mohamedtharik.in/mohamed-tharik-founder-storesnap.jpg", 
+    "jobTitle": "Founder",
+    "worksFor": {
+      "@id": "https://storesnap.in/#organization"
+    },
+    "sameAs": [
+      "https://www.instagram.com/im_thxrik_/",
+      "https://www.facebook.com/share/1DWHS7MDEc/",
+      "https://github.com/Md-Tharik",
+      "https://www.linkedin.com/in/mohamed-tharik-6164531b7",
+      "https://youtube.com/@imthxrik",
+      "https://medium.com/@mdtharik563",
+      "https://dev.to/md_tharik_4dfe8c4b8ab8caf",
+      "https://www.wikidata.org/wiki/Q115862835"
+    ],
+    "knowsAbout": [
+      "Software Development",
+      "E-commerce",
+      "SaaS",
+      "Computer Applications",
+      "Web Development"
+    ],
+    "publishingPrinciples": "https://mohamedtharik.in"
+  },
+  {
+    "@context": "https://schema.org",
     "@type": "Organization",
     "@id": "https://storesnap.in/#organization",
     "name": "StoreSnap India",
-    "url": "https://storesnap.in"
-  },
-  "sameAs": [
-    "https://www.instagram.com/im_thxrik_/",
-    "https://www.facebook.com/share/1DWHS7MDEc/",
-    "https://github.com/Md-Tharik",
-    "https://www.linkedin.com/in/mohamed-tharik-6164531b7",
-    "https://youtube.com/@imthxrik",
-    "https://medium.com/@mdtharik563",
-    "https://dev.to/md_tharik_4dfe8c4b8ab8caf",
-    "https://www.wikidata.org/wiki/Q115862835",
-    "https://www.producthunt.com/products/storesnap"
-  ],
-  "knowsAbout": [
-    "Software Development",
-    "E-commerce",
-    "SaaS",
-    "Computer Applications",
-    "Web Development"
-  ],
-  "publishingPrinciples": "https://mohamedtharik.in"
-}
+    "url": "https://storesnap.in",
+    "founder": {
+      "@id": "https://mohamedtharik.in/#person"
+    },
+    "sameAs": [
+      "https://www.producthunt.com/products/storesnap"
+    ]
+  }
+]
 </script>
 
 <style>
@@ -224,46 +259,20 @@
   }
 
   /* 📱 RESPONSIVE MEDIA QUERIES FOR HERO TEXT & FRAMING 📱 */
-
-  /* Tablet (iPads, Mid-size) */
   @media (min-width: 768px) {
-    .hero-inner {
-      max-width: 75%;
-      padding-bottom: 6vw;
-    }
+    .hero-inner { max-width: 75%; padding-bottom: 6vw; }
   }
-
-  /* Laptops / Desktops */
   @media (min-width: 1024px) {
-    .hero-inner {
-      max-width: 55%; 
-      padding-bottom: 4vw;
-    }
-    .hero h1 {
-      font-size: clamp(3.5rem, 6vw, 6.5rem); 
-    }
-    .hero-tagline {
-      font-size: 1.05rem; 
-      max-width: 480px; 
-    }
+    .hero-inner { max-width: 55%; padding-bottom: 4vw; }
+    .hero h1 { font-size: clamp(3.5rem, 6vw, 6.5rem); }
+    .hero-tagline { font-size: 1.05rem; max-width: 480px; }
   }
-
-  /* Short/Squished Browser Windows (Laptops with tabs open) */
   @media (min-width: 800px) and (max-height: 750px) {
-    .hero-inner {
-      max-width: 55%;
-      padding-bottom: 1.5vw; 
-    }
-    .hero h1 {
-      font-size: clamp(2.8rem, 5vw, 4.5rem); 
-    }
+    .hero-inner { max-width: 55%; padding-bottom: 1.5vw; }
+    .hero h1 { font-size: clamp(2.8rem, 5vw, 4.5rem); }
   }
-
-  /* Large Widescreen Monitors */
   @media (min-width: 1440px) {
-    .hero-inner {
-      max-width: 50%;
-    }
+    .hero-inner { max-width: 50%; }
   }
 
   .btn{
@@ -278,14 +287,10 @@
     border:1px solid var(--hairline);
     transition:border-color .4s ease, background .4s ease, color .4s ease;
   }
-  .btn-primary{
-    background:var(--off-white);
-    color:var(--black);
-    border-color:var(--off-white);
-  }
-  .btn-primary:hover{background:var(--brass);border-color:var(--brass);}
-  .btn-ghost{color:var(--off-white);}
-  .btn-ghost:hover{border-color:var(--off-white);}
+  .btn-primary{ background:var(--off-white); color:var(--black); border-color:var(--off-white); }
+  .btn-primary:hover{ background:var(--brass); border-color:var(--brass); }
+  .btn-ghost{ color:var(--off-white); }
+  .btn-ghost:hover{ border-color:var(--off-white); }
 
   .scroll-cue{
     position:absolute;
@@ -374,10 +379,7 @@
     margin-bottom:22px;
     max-width:52ch;
   }
-  .about-body p:first-of-type{
-    font-size:1.2rem;
-    color:var(--off-white);
-  }
+  .about-body p:first-of-type{ font-size:1.2rem; color:var(--off-white); }
   .domain-grid{
     margin-top:44px;
     display:grid;
@@ -386,10 +388,7 @@
     background:var(--hairline-soft);
     border:1px solid var(--hairline-soft);
   }
-  .domain-cell{
-    background:var(--black);
-    padding:26px 22px;
-  }
+  .domain-cell{ background:var(--black); padding:26px 22px; }
   .domain-cell .num{
     font-size:0.72rem;
     color:var(--brass);
@@ -397,11 +396,7 @@
     display:block;
     margin-bottom:10px;
   }
-  .domain-cell .label{
-    font-family:var(--serif);
-    font-size:1.15rem;
-    font-weight:500;
-  }
+  .domain-cell .label{ font-family:var(--serif); font-size:1.15rem; font-weight:500; }
 
   @media (max-width:860px){
     .about{grid-template-columns:1fr;gap:44px;}
@@ -429,45 +424,22 @@
 
   .ledger{position:relative;padding-left:38px;}
   .ledger::before{
-    content:'';
-    position:absolute;left:0;top:6px;bottom:6px;
-    width:1px;
-    background:var(--hairline);
+    content:''; position:absolute;left:0;top:6px;bottom:6px;
+    width:1px; background:var(--hairline);
   }
-  .ledger-item{
-    position:relative;
-    padding-bottom:64px;
-  }
+  .ledger-item{ position:relative; padding-bottom:64px; }
   .ledger-item:last-child{padding-bottom:0;}
   .ledger-item::before{
-    content:'';
-    position:absolute;
-    left:-38px;top:6px;
-    width:9px;height:9px;
-    border:1px solid var(--brass);
-    background:var(--charcoal);
-    transform:rotate(45deg);
+    content:''; position:absolute; left:-38px;top:6px;
+    width:9px;height:9px; border:1px solid var(--brass);
+    background:var(--charcoal); transform:rotate(45deg);
   }
   .ledger-date{
-    font-size:0.78rem;
-    letter-spacing:0.14em;
-    text-transform:uppercase;
-    color:var(--brass);
-    margin-bottom:10px;
-    display:block;
+    font-size:0.78rem; letter-spacing:0.14em; text-transform:uppercase;
+    color:var(--brass); margin-bottom:10px; display:block;
   }
-  .ledger-title{
-    font-family:var(--serif);
-    font-size:1.6rem;
-    font-weight:500;
-    margin-bottom:12px;
-  }
-  .ledger-desc{
-    color:rgba(243,241,234,0.72);
-    font-weight:300;
-    max-width:48ch;
-    font-size:0.98rem;
-  }
+  .ledger-title{ font-family:var(--serif); font-size:1.6rem; font-weight:500; margin-bottom:12px; }
+  .ledger-desc{ color:rgba(243,241,234,0.72); font-weight:300; max-width:48ch; font-size:0.98rem; }
 
   @media (max-width:860px){
     .journey-grid{grid-template-columns:1fr;}
@@ -475,50 +447,21 @@
   }
 
   /* ---------- Ventures ---------- */
-  .ventures-list{
-    display:flex;
-    flex-direction:column;
-  }
+  .ventures-list{ display:flex; flex-direction:column; }
   .venture{
-    display:grid;
-    grid-template-columns: 110px 1fr 200px;
-    gap:32px;
-    align-items:start;
-    padding:44px 0;
-    border-top:1px solid var(--hairline);
+    display:grid; grid-template-columns: 110px 1fr 200px; gap:32px;
+    align-items:start; padding:44px 0; border-top:1px solid var(--hairline);
     transition:padding-left .5s cubic-bezier(.19,1,.22,1), background .5s ease;
   }
   .venture:last-child{border-bottom:1px solid var(--hairline);}
   .venture:hover{padding-left:14px;background:var(--hairline-soft);}
-  .venture-num{
-    font-family:var(--serif);
-    font-size:1rem;
-    color:var(--gray-dim);
-    padding-top:6px;
-  }
-  .venture-name{
-    font-family:var(--serif);
-    font-size:clamp(1.5rem,2.6vw,2.1rem);
-    font-weight:500;
-    margin-bottom:14px;
-  }
-  .venture-desc{
-    color:rgba(243,241,234,0.72);
-    font-weight:300;
-    max-width:56ch;
-    font-size:0.98rem;
-  }
+  .venture-num{ font-family:var(--serif); font-size:1rem; color:var(--gray-dim); padding-top:6px; }
+  .venture-name{ font-family:var(--serif); font-size:clamp(1.5rem,2.6vw,2.1rem); font-weight:500; margin-bottom:14px; }
+  .venture-desc{ color:rgba(243,241,234,0.72); font-weight:300; max-width:56ch; font-size:0.98rem; }
   .venture-link{
-    justify-self:end;
-    text-align:right;
-    font-size:0.78rem;
-    letter-spacing:0.12em;
-    text-transform:uppercase;
-    color:var(--off-white);
-    padding-top:10px;
-    white-space:nowrap;
-    border-bottom:1px solid transparent;
-    transition:border-color .3s ease, color .3s ease;
+    justify-self:end; text-align:right; font-size:0.78rem; letter-spacing:0.12em;
+    text-transform:uppercase; color:var(--off-white); padding-top:10px;
+    white-space:nowrap; border-bottom:1px solid transparent; transition:border-color .3s ease, color .3s ease;
   }
   .venture:hover .venture-link{border-color:var(--brass);color:var(--brass);}
 
@@ -530,86 +473,30 @@
   /* ---------- Impact ---------- */
   .impact{background:var(--charcoal);}
   .impact-grid{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:1px;
-    background:var(--hairline-soft);
-    border:1px solid var(--hairline-soft);
+    display:grid; grid-template-columns:repeat(3,1fr); gap:1px;
+    background:var(--hairline-soft); border:1px solid var(--hairline-soft);
   }
-  .impact-cell{
-    background:var(--charcoal);
-    padding:60px 34px;
-    text-align:center;
-  }
-  .impact-num{
-    font-family:var(--serif);
-    font-size:clamp(2.6rem,6vw,4.6rem);
-    font-weight:600;
-    color:var(--off-white);
-    line-height:1;
-  }
-  .impact-label{
-    margin-top:16px;
-    font-size:0.78rem;
-    letter-spacing:0.14em;
-    text-transform:uppercase;
-    color:var(--gray);
-  }
+  .impact-cell{ background:var(--charcoal); padding:60px 34px; text-align:center; }
+  .impact-num{ font-family:var(--serif); font-size:clamp(2.6rem,6vw,4.6rem); font-weight:600; color:var(--off-white); line-height:1; }
+  .impact-label{ margin-top:16px; font-size:0.78rem; letter-spacing:0.14em; text-transform:uppercase; color:var(--gray); }
   @media (max-width:700px){ .impact-grid{grid-template-columns:1fr;} }
 
   /* ---------- Quote ---------- */
-  .quote-section{
-    padding:min(18vw,180px) 0;
-    text-align:center;
-  }
-  .quote-mark{
-    font-family:var(--serif);
-    font-size:4rem;
-    color:var(--brass);
-    line-height:1;
-    margin-bottom:10px;
-  }
+  .quote-section{ padding:min(18vw,180px) 0; text-align:center; }
+  .quote-mark{ font-family:var(--serif); font-size:4rem; color:var(--brass); line-height:1; margin-bottom:10px; }
   blockquote{
-    font-family:var(--serif);
-    font-weight:500;
-    font-style:italic;
-    font-size:clamp(1.6rem,4vw,2.9rem);
-    line-height:1.35;
-    max-width:960px;
-    margin:0 auto;
-    color:var(--off-white);
+    font-family:var(--serif); font-weight:500; font-style:italic;
+    font-size:clamp(1.6rem,4vw,2.9rem); line-height:1.35; max-width:960px; margin:0 auto; color:var(--off-white);
   }
 
   /* ---------- Connect / Footer ---------- */
-  .connect{
-    border-top:1px solid var(--hairline-soft);
-    padding-top:min(14vw,140px);
-  }
-  .connect-inner{
-    display:grid;
-    grid-template-columns:1.2fr 1fr;
-    gap:60px;
-    align-items:end;
-  }
-  .connect-title{
-    font-family:var(--serif);
-    font-weight:500;
-    font-size:clamp(2.4rem,6vw,4.4rem);
-    line-height:1.05;
-  }
-  .connect-links{
-    display:flex;
-    flex-direction:column;
-    gap:2px;
-  }
+  .connect{ border-top:1px solid var(--hairline-soft); padding-top:min(14vw,140px); }
+  .connect-inner{ display:grid; grid-template-columns:1.2fr 1fr; gap:60px; align-items:end; }
+  .connect-title{ font-family:var(--serif); font-weight:500; font-size:clamp(2.4rem,6vw,4.4rem); line-height:1.05; }
+  .connect-links{ display:flex; flex-direction:column; gap:2px; }
   .connect-links a{
-    padding:16px 0;
-    border-bottom:1px solid var(--hairline);
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    font-size:0.95rem;
-    letter-spacing:0.02em;
+    padding:16px 0; border-bottom:1px solid var(--hairline); display:flex;
+    justify-content:space-between; align-items:center; font-size:0.95rem; letter-spacing:0.02em;
     transition:color .3s ease, padding-left .3s ease;
   }
   .connect-links a span.arrow{opacity:0;transition:opacity .3s ease;color:var(--brass);}
@@ -619,24 +506,12 @@
   @media (max-width:800px){ .connect-inner{grid-template-columns:1fr;} }
 
   footer{
-    margin-top:min(12vw,120px);
-    padding:36px 6vw 40px;
-    border-top:1px solid var(--hairline-soft);
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    gap:6px;
-    text-align:center;
+    margin-top:min(12vw,120px); padding:36px 6vw 40px; border-top:1px solid var(--hairline-soft);
+    display:flex; flex-direction:column; align-items:center; gap:6px; text-align:center;
   }
-  footer p{
-    font-size:0.82rem;
-    color:var(--gray);
-  }
-  footer a{
-    color:var(--off-white) !important;
-    font-weight:600;
-  }
-  footer a:hover{color:var(--brass) !important;text-decoration:underline;}
+  footer p{ font-size:0.82rem; color:var(--gray); }
+  footer a{ color:var(--off-white) !important; font-weight:600; }
+  footer a:hover{ color:var(--brass) !important; text-decoration:underline; }
 </style>
 </head>
 <body>
