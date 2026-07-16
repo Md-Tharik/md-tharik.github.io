@@ -11,33 +11,48 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
+<!-- 
+  =========================================
+  ADVANCED PERSON SCHEMA (ENTITY CONNECTOR)
+  =========================================
+-->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Person",
+  "@id": "https://mohamedtharik.in/#person",
   "name": "Mohamed Tharik",
+  "givenName": "Mohamed",
+  "familyName": "Tharik",
   "additionalName": "Tharik",
-  "url": "https://md-tharik.github.io",
-  "image": "https://avatars.githubusercontent.com/u/120616110?v=4", 
+  "url": "https://mohamedtharik.in",
+  "image": "https://mohamedtharik.in/mohamed-tharik-founder-storesnap.jpg", 
+  "jobTitle": "Founder",
+  "worksFor": {
+    "@type": "Organization",
+    "@id": "https://storesnap.in/#organization",
+    "name": "StoreSnap India",
+    "url": "https://storesnap.in"
+  },
   "sameAs": [
-    "https://www.instagram.com/im_thxrik_",
+    "https://www.instagram.com/im_thxrik_/",
     "https://www.facebook.com/share/1DWHS7MDEc/",
     "https://github.com/Md-Tharik",
     "https://www.linkedin.com/in/mohamed-tharik-6164531b7",
     "https://youtube.com/@imthxrik",
     "https://medium.com/@mdtharik563",
     "https://dev.to/md_tharik_4dfe8c4b8ab8caf",
+    "https://www.wikidata.org/wiki/Q115862835",
     "https://www.producthunt.com/products/storesnap"
   ],
-  "jobTitle": "Founder",
-  "knowsAbout": ["Software Development", "E-commerce", "SaaS", "Computer Applications"],
-  "@reverse": {
-    "founder": {
-      "@type": "Organization",
-      "name": "StoreSnap India",
-      "url": "https://storesnap.in"
-    }
-  }
+  "knowsAbout": [
+    "Software Development",
+    "E-commerce",
+    "SaaS",
+    "Computer Applications",
+    "Web Development"
+  ],
+  "publishingPrinciples": "https://mohamedtharik.in"
 }
 </script>
 
@@ -627,7 +642,7 @@
 <body>
 
 <header class="site-nav">
-  <div class="nav-mark">MD THARIK</div>
+  <div class="nav-mark">MOHAMED THARIK</div>
   <nav class="nav-links">
     <a href="#profile">Profile</a>
     <a href="#journey">Journey</a>
@@ -639,7 +654,7 @@
 <!-- HERO -->
 <section class="hero">
   <div class="hero-media">
-    <img src="/image-1.jpg" alt="Mohamed Tharik" onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'fallback'}))">
+    <img src="/mohamed-tharik-founder-storesnap.jpg" alt="Mohamed Tharik — Founder of StoreSnap India" onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'fallback'}))">
   </div>
   <div class="hero-inner">
     <span class="hero-eyebrow reveal">Founder &amp; Software Creator — India</span>
@@ -674,7 +689,7 @@
 
     <div class="about">
       <div class="about-media reveal">
-        <img src="/image-2.jpg" alt="Mohamed Tharik at work" onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'fallback'}))">
+        <img src="/mohamed-tharik-software-developer.jpg" alt="Mohamed Tharik — Software Developer at work" onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'fallback'}))">
       </div>
       <div class="about-body">
         <p class="reveal">Mohamed Tharik builds software with absolute precision—prioritizing performance, scalability, and zero wasted motion.</p>
@@ -714,7 +729,7 @@
 
     <div class="journey-grid">
       <div class="journey-media reveal">
-        <img src="/image-3.jpg" alt="Journey" onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'fallback'}))">
+        <img src="/mohamed-tharik-journey.jpg" alt="Journey of Mohamed Tharik" onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'fallback'}))">
       </div>
 
       <div class="ledger">
@@ -816,7 +831,7 @@
       <div class="connect-links reveal reveal-delay-1">
         <a href="https://www.linkedin.com/in/mohamed-tharik-6164531b7" target="_blank" rel="noopener">LinkedIn <span class="arrow">→</span></a>
         <a href="https://github.com/Md-Tharik" target="_blank" rel="noopener">GitHub <span class="arrow">→</span></a>
-        <a href="https://www.instagram.com/im_thxrik_" target="_blank" rel="noopener">Instagram <span class="arrow">→</span></a>
+        <a href="https://www.instagram.com/im_thxrik_/" target="_blank" rel="noopener">Instagram <span class="arrow">→</span></a>
         <a href="https://youtube.com/@imthxrik" target="_blank" rel="noopener">YouTube <span class="arrow">→</span></a>
         <a href="https://www.facebook.com/share/1DWHS7MDEc/" target="_blank" rel="noopener">Facebook <span class="arrow">→</span></a>
         <a href="https://medium.com/@mdtharik563" target="_blank" rel="noopener">Medium <span class="arrow">→</span></a>
@@ -827,9 +842,9 @@
   </div>
 </section>
 
-<footer class="text-center p-5 text-sm text-gray-500 w-full mt-auto">
+<footer>
     <p>&copy; 2026 Mohamed Tharik. All rights reserved.</p>
-    <p>Built by <a href="https://md-tharik.github.io" rel="me" class="text-blue-500 font-semibold no-underline hover:underline">Mohamed Tharik</a></p>
+    <p>Built by <a href="https://mohamedtharik.in" rel="me">Mohamed Tharik</a></p>
 </footer>
 
 <script>
