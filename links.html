@@ -315,51 +315,11 @@
     <div class="links-grid" id="linksGrid">
 
       <!-- CARD 1: ROADMAP PDF -->
-      <a href="https://docs.google.com/document/d/1h338YW8_stHd6L_qQU0Yd_YZ8H0NKznz7c6kvrcrHoY/edit?usp=drive_web" target="_blank" rel="noopener" class="card" data-category="roadmap" data-keywords="pdf web development roadmap 2026 html css js react nextjs supabase youtube tutorial course">
+      <a href="https://docs.google.com/document/d/1h338YW8_stHd6L_qQU0Yd_YZ8H0NKznz7c6kvrcrHoY/edit?usp=drive_web" target="_blank" rel="noopener" class="card" data-category="roadmap" data-keywords="pdf web development roadmap 2026 html css js react nextjs supabase youtube tutorial course phase 1 phase 2">
         <div class="card-info">
           <span class="card-tag">Roadmap / Free PDF</span>
           <h2 class="card-title">The Ultimate AI Web Developer Roadmap (2026)</h2>
           <p class="card-desc">Complete two-phase learning syllabus linking curated YouTube tutorials for Quick Builders &amp; Job Seekers.</p>
-        </div>
-        <span class="card-arrow">→</span>
-      </a>
-
-      <!-- CARD 2: GLASSMORPHISM PROMPT -->
-      <a href="#" class="card" data-category="prompt" data-keywords="glassmorphic glassmorphism ui ux css styling cheat code front end design prompt">
-        <div class="card-info">
-          <span class="card-tag">AI Prompt Template</span>
-          <h2 class="card-title">Glassmorphism UI Engine Prompt</h2>
-          <p class="card-desc">Copy-paste prompt to force AI tools to generate semi-transparent frosted glass UI headers and card components.</p>
-        </div>
-        <span class="card-arrow">→</span>
-      </a>
-
-      <!-- CARD 3: DATABASE SECURITY -->
-      <a href="#" class="card" data-category="prompt" data-keywords="firebase backend database security rules firestore permissions prompt">
-        <div class="card-info">
-          <span class="card-tag">Security / Backend</span>
-          <h2 class="card-title">Firebase Database Lock-Down Prompt</h2>
-          <p class="card-desc">Master prompt to generate strict, leak-proof Firestore security rules for client and e-commerce projects.</p>
-        </div>
-        <span class="card-arrow">→</span>
-      </a>
-
-      <!-- CARD 4: CINEMATIC PROMO -->
-      <a href="#" class="card" data-category="prompt" data-keywords="cinematic video prompt luma runway product showcase startup promo reel">
-        <div class="card-info">
-          <span class="card-tag">Marketing / Video AI</span>
-          <h2 class="card-title">Cinematic Web App Promo Prompt</h2>
-          <p class="card-desc">Frame-by-frame camera prompt to turn flat website screenshots into high-budget AI promotional videos.</p>
-        </div>
-        <span class="card-arrow">→</span>
-      </a>
-
-      <!-- CARD 5: QUICKQR UTILITY -->
-      <a href="https://mohamedtharik.in" class="card" data-category="tool" data-keywords="quickqr qr code generator client side utility tool">
-        <div class="card-info">
-          <span class="card-tag">Standalone Utility</span>
-          <h2 class="card-title">QuickQR Generator Engine</h2>
-          <p class="card-desc">Serverless, zero-login client-side QR generation ecosystem built for speed.</p>
         </div>
         <span class="card-arrow">→</span>
       </a>
@@ -388,7 +348,9 @@
     const query = searchInput.value.toLowerCase().trim();
     let visibleCount = 0;
 
-    cards.forEach(card => {
+    const activeCards = document.querySelectorAll('.card');
+
+    activeCards.forEach(card => {
       const category = card.getAttribute('data-category');
       const keywords = card.getAttribute('data-keywords').toLowerCase();
       const title = card.querySelector('.card-title').textContent.toLowerCase();
