@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="google-site-verification" content="Ad6Ce8Baz8ZEiOEXTj6xfB8QWIJMn_tjEgYPjcPvIo0" />
+
+<!-- FIXED CANONICAL TAG FOR ABOUT PAGE -->
+<link rel="canonical" href="https://mohamedtharik.in/about" />
+
+<!-- ROBOTS TAG -->
+<meta name="robots" content="index, follow, max-image-preview:large" />
+
+<title>About Mohamed Tharik — Background & Education</title>
+<meta name="description" content="Learn about the early life, academic background, and technical foundation of Mohamed Tharik, software developer and founder of StoreSnap India.">
+
+<!-- OPEN GRAPH -->
+<meta property="og:title" content="About Mohamed Tharik — Background & Education" />
+<meta property="og:description" content="Learn about the early life, academic background, and technical foundation of Mohamed Tharik, software developer and founder of StoreSnap India." />
+<meta property="og:url" content="https://mohamedtharik.in/about" />
+<meta property="og:type" content="profile" />
+<meta property="og:image" content="https://mohamedtharik.in/mohamed-tharik-founder-storesnap.jpg" />
+
+<!-- FAVICONS -->
+<link rel="icon" href="/favicon.ico" sizes="any" />
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,500;0,600;0,700;1,500&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<!-- 
+  =========================================
+  KNOWLEDGE GRAPH SCHEMA: PROFILE PAGE
+  =========================================
+-->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfilePage",
+  "mainEntity": {
+    "@type": "Person",
+    "@id": "https://mohamedtharik.in/#person",
+    "name": "Mohamed Tharik",
+    "birthDate": "2007-09-14",
+    "birthPlace": {
+      "@type": "Place",
+      "name": "Cuddalore, Tamil Nadu, India"
+    },
+    "alumniOf": {
+      "@type": "EducationalOrganization",
+      "name": "Bachelor of Computer Applications (BCA)"
+    },
+    "jobTitle": "Software Developer & Entrepreneur",
+    "description": "Mohamed Tharik is a software developer and entrepreneur pursuing his Bachelor of Computer Applications (BCA). He is the founder of StoreSnap India.",
+    "url": "https://mohamedtharik.in/about",
+    "sameAs": [
+      "https://mohamedtharik.in/",
+      "https://www.linkedin.com/in/mohamed-tharik-6164531b7",
+      "https://x.com/Tharik_0756",
+      "https://github.com/Md-Tharik",
+      "https://www.crunchbase.com/person/mohamed-tharik-f689"
+    ]
+  }
+}
+</script>
+
+<style>
+  :root{
+    --black: #080810;
+    --charcoal: #121218;
+    --charcoal-2: #1a1a22;
+    --off-white: #F3F1EA;
+    --gray: #948F82;
+    --gray-dim: #5c594f;
+    --hairline: rgba(243,241,234,0.12);
+    --hairline-soft: rgba(243,241,234,0.07);
+    --brass: #5B6B78;
+    --serif: 'Fraunces', 'Georgia', serif;
+    --sans: 'IBM Plex Sans', sans-serif;
+  }
+
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    background:var(--black);
+    color:var(--off-white);
+    font-family:var(--sans);
+    font-weight:400;
+    line-height:1.6;
+    overflow-x:hidden;
+    -webkit-font-smoothing:antialiased;
+  }
+
+  ::selection{background:var(--brass);color:var(--black);}
+  a{color:inherit;text-decoration:none;}
+  img{display:block;max-width:100%;}
+
+  .wrap{
+    max-width:1040px; /* Slightly narrower for readable text */
+    margin:0 auto;
+    padding:0 6vw;
+  }
+
+  /* ---------- Reveal animation ---------- */
+  .reveal{
+    opacity:0;
+    transform:translateY(28px);
+    transition:opacity 1.1s cubic-bezier(.19,1,.22,1), transform 1.1s cubic-bezier(.19,1,.22,1);
+  }
+  .reveal.is-visible{opacity:1;transform:translateY(0);}
+  .reveal-delay-1.is-visible{transition-delay:.12s;}
+  .reveal-delay-2.is-visible{transition-delay:.24s;}
+
+  @media (prefers-reduced-motion: reduce){
+    .reveal{opacity:1;transform:none;transition:none;}
+    html{scroll-behavior:auto;}
+  }
+
+  /* ---------- Nav ---------- */
+  header.site-nav{
+    position:fixed;
+    top:0;left:0;right:0;
+    z-index:100;
+    padding:16px 6vw;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background: rgba(8, 8, 16, 0.85);
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--hairline-soft);
+  }
+
+  .nav-mark{
+    font-family:var(--serif);
+    font-size:1.05rem;
+    letter-spacing:0.06em;
+    font-weight:600;
+  }
+  .nav-links{
+    display:flex;
+    gap:36px;
+    font-size:0.78rem;
+    letter-spacing:0.12em;
+    text-transform:uppercase;
+  }
+  .nav-links a{opacity:0.75;transition:opacity .3s ease;}
+  .nav-links a:hover{opacity:1;}
+  @media (max-width:700px){ .nav-links{display:none;} }
+
+  /* ---------- Page Header ---------- */
+  .page-header {
+    padding: min(24vw, 200px) 0 min(8vw, 80px);
+    border-bottom: 1px solid var(--hairline-soft);
+    margin-bottom: min(10vw, 100px);
+  }
+  .page-header h1 {
+    font-family: var(--serif);
+    font-size: clamp(3rem, 6vw, 5.5rem);
+    font-weight: 500;
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+    color: var(--off-white);
+  }
+  .page-header em { color: var(--brass); font-style: normal; }
+
+  /* ---------- About Content ---------- */
+  .about-grid {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 80px;
+    align-items: start;
+    padding-bottom: min(16vw, 150px);
+  }
+  @media (max-width: 860px) {
+    .about-grid { grid-template-columns: 1fr; gap: 60px; }
+  }
+
+  .article-body h2 {
+    font-family: var(--serif);
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--off-white);
+    margin-bottom: 24px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--hairline-soft);
+  }
+  .article-body p {
+    font-size: 1.1rem;
+    color: rgba(243,241,234,0.85);
+    font-weight: 300;
+    margin-bottom: 24px;
+    line-height: 1.7;
+    max-width: 60ch;
+  }
+
+  /* ---------- Fact Sidebar ---------- */
+  .fact-sidebar {
+    background: var(--charcoal);
+    padding: 32px;
+    border: 1px solid var(--hairline);
+    position: sticky;
+    top: 120px;
+  }
+  .fact-item {
+    margin-bottom: 24px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid var(--hairline-soft);
+  }
+  .fact-item:last-child { margin-bottom: 0; padding-bottom: 0; border-bottom: none; }
+  
+  .fact-label {
+    font-size: 0.75rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--brass);
+    font-weight: 600;
+    display: block;
+    margin-bottom: 8px;
+  }
+  .fact-value {
+    font-family: var(--serif);
+    font-size: 1.25rem;
+    color: var(--off-white);
+    line-height: 1.4;
+  }
+
+  .btn-back {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 28px;
+    font-size: 0.78rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    font-weight: 500;
+    border: 1px solid var(--hairline);
+    color: var(--off-white);
+    transition: border-color .4s ease, background .4s ease;
+    margin-top: 40px;
+  }
+  .btn-back:hover { background: var(--off-white); color: var(--black); border-color: var(--off-white); }
+
+  /* ---------- Footer ---------- */
+  footer{
+    padding: 36px 6vw 40px; 
+    border-top: 1px solid var(--hairline-soft);
+    display: flex; flex-direction: column; align-items: center; gap: 6px; text-align: center;
+  }
+  footer p{ font-size: 0.82rem; color: var(--gray); }
+  footer a{ color: var(--off-white) !important; font-weight: 600; }
+  footer a:hover{ color: var(--brass) !important; text-decoration: underline; }
+</style>
+</head>
+<body>
+
+<header class="site-nav">
+  <div class="nav-mark">MOHAMED THARIK</div>
+  <nav class="nav-links">
+    <a href="https://mohamedtharik.in/#profile">Profile</a>
+    <a href="https://mohamedtharik.in/#journey">Journey</a>
+    <a href="https://mohamedtharik.in/#ventures">Ventures</a>
+    <a href="https://mohamedtharik.in/#connect">Connect</a>
+  </nav>
+</header>
+
+<main>
+  <div class="wrap">
+    <header class="page-header reveal">
+      <h1>Background &amp;<br><em>Early Timeline.</em></h1>
+    </header>
+
+    <div class="about-grid">
+      <article class="article-body">
+        <h2 class="reveal">Early Life & Origins</h2>
+        <p class="reveal reveal-delay-1">Mohamed Tharik was born on September 14, 2007, in the Cuddalore district of Tamil Nadu, India. Growing up in a rapidly digitizing technological landscape, he developed an early affinity for logical structuring, systems architecture, and software engineering.</p>
+        <p class="reveal reveal-delay-2">Rather than adopting a traditional approach to early-stage learning, he dedicated his time to understanding the foundational mechanics of the web—eventually leading to his philosophy of frictionless, zero-waste application design.</p>
+        
+        <h2 class="reveal" style="margin-top: 60px;">Academic Progression</h2>
+        <p class="reveal reveal-delay-1">To formalize his technical expertise, he is currently pursuing a Bachelor of Computer Applications (BCA) degree. This academic pathway complements his practical experience, allowing him to bridge theoretical computer science principles with the real-world deployment of scalable e-commerce infrastructures and high-speed client-side utilities.</p>
+
+        <a href="https://mohamedtharik.in/" class="btn-back reveal reveal-delay-2">← Return to Main Portfolio</a>
+      </article>
+
+      <aside class="fact-sidebar reveal">
+        <div class="fact-item">
+          <span class="fact-label">Date of Birth</span>
+          <span class="fact-value">September 14, 2007</span>
+        </div>
+        <div class="fact-item">
+          <span class="fact-label">Place of Origin</span>
+          <span class="fact-value">Cuddalore, Tamil Nadu, India</span>
+        </div>
+        <div class="fact-item">
+          <span class="fact-label">Education</span>
+          <span class="fact-value">Bachelor of Computer Applications (BCA)<br><span style="font-size: 0.9rem; color: var(--gray); font-family: var(--sans);">Ongoing</span></span>
+        </div>
+        <div class="fact-item">
+          <span class="fact-label">Primary Ventures</span>
+          <span class="fact-value">StoreSnap India<br>ARTRES<br>QuickQR</span>
+        </div>
+      </aside>
+    </div>
+  </div>
+</main>
+
+<footer>
+    <p>&copy; 2026 Mohamed Tharik. All rights reserved.</p>
+    <p>Built by <a href="https://mohamedtharik.in" rel="me">Mohamed Tharik</a></p>
+</footer>
+
+<script>
+(function(){
+  var els = document.querySelectorAll('.reveal');
+  if('IntersectionObserver' in window){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if(entry.isIntersecting){
+          entry.target.classList.add('is-visible');
+          io.unobserve(entry.target);
+        }
+      });
+    }, {threshold:0.15, rootMargin:'0px 0px -60px 0px'});
+    els.forEach(function(el){ io.observe(el); });
+  } else {
+    els.forEach(function(el){ el.classList.add('is-visible'); });
+  }
+})();
+</script>
+
+</body>
+</html>
