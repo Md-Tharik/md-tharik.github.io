@@ -51,10 +51,10 @@
     "familyName": "Tharik",
     "additionalName": "Tharik",
     "owns": {
-  "@type": "Organization",
-  "name": "Nect Technologies",
-  "url": "https://mohamedtharik.in/nect"
-},
+      "@type": "Organization",
+      "name": "Nect Technologies",
+      "url": "https://mohamedtharik.in/nect"
+    },
     "url": "https://mohamedtharik.in",
     "image": "https://mohamedtharik.in/mohamed-tharik-founder-storesnap.jpg", 
     "jobTitle": "Software Developer & Entrepreneur",
@@ -205,7 +205,6 @@
   .nav-links a:hover{opacity:1;}
   @media (max-width:700px){ .nav-links{display:none;} }
 
-
   /* ---------- Hero ---------- */
   .hero{
     position:relative;
@@ -225,7 +224,6 @@
     object-fit:cover;
     object-position: top center; 
     transform-origin: top center; 
-    /* Reduced grayscale and increased brightness so the face is visible */
     filter:grayscale(15%) brightness(0.9) contrast(1.05);
     transform:scale(1.02); 
     will-change:transform;
@@ -238,7 +236,6 @@
   .hero-media::after{
     content:'';
     position:absolute;inset:0;
-    /* Gradient overlay: Clear at the top, fading to dark at the bottom for text readability */
     background: linear-gradient(180deg, rgba(8,8,16,0.1) 0%, rgba(8,8,16,0.4) 50%, rgba(8,8,16,0.95) 100%);
   }
   
@@ -256,10 +253,10 @@
     font-size:0.78rem;
     letter-spacing:0.22em;
     text-transform:uppercase;
-    color:var(--off-white); /* Swapped for high contrast */
-    opacity: 0.85; /* Softened to balance visual hierarchy */
-    font-weight:600; /* Increased weight slightly */
-    text-shadow: 0 2px 12px rgba(0,0,0,0.9), 0 1px 3px rgba(0,0,0,1); /* Heavy drop shadow */
+    color:var(--off-white); 
+    opacity: 0.85; 
+    font-weight:600; 
+    text-shadow: 0 2px 12px rgba(0,0,0,0.9), 0 1px 3px rgba(0,0,0,1); 
   }
   
   .hero h1{
@@ -393,7 +390,7 @@
     align-items:start;
   }
   .about-media{
-    aspect-ratio:4/5; /* INSTAGRAM POST PORTRAIT RATIO */
+    aspect-ratio:4/5; 
     overflow:hidden;
     position:relative;
     border:1px solid var(--hairline);
@@ -452,7 +449,7 @@
   .journey-media{
     position:sticky;
     top:120px;
-    aspect-ratio:16/9; /* WIDE LANDSCAPE RATIO */
+    aspect-ratio:16/9; 
     overflow:hidden;
     border:1px solid var(--hairline);
   }
@@ -480,7 +477,7 @@
 
   @media (max-width:860px){
     .journey-grid{grid-template-columns:1fr;}
-    .journey-media{position:relative;top:0;aspect-ratio:16/9;} /* MAINTAIN LANDSCAPE ON MOBILE */
+    .journey-media{position:relative;top:0;aspect-ratio:16/9;} 
   }
 
   /* ---------- Ventures ---------- */
@@ -698,6 +695,15 @@
           <h3 class="venture-name">QuickQR</h3>
           <p class="venture-desc">A completely serverless, lightweight client-side QR generation ecosystem optimized for immediate utility deployment.</p>
         </div>
+      </div>
+
+      <div class="venture reveal">
+        <span class="venture-num">04</span>
+        <div>
+          <h3 class="venture-name">Tethr</h3>
+          <p class="venture-desc">The first anti-doomscrolling utility powered by on-device Edge AI, utilizing hardware-level grayscale and adaptive cognitive friction to break algorithmic loops.</p>
+        </div>
+        <a href="https://tethrai.in" target="_blank" rel="noopener" class="venture-link">tethrai.in <span class="arrow">→</span></a>
       </div>
     </div>
   </div>
