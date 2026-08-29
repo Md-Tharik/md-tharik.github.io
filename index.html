@@ -58,7 +58,7 @@
     "url": "https://mohamedtharik.in",
     "image": "https://mohamedtharik.in/mohamed-tharik-founder-storesnap.jpg", 
     "jobTitle": "Software Developer & Entrepreneur",
-    "description": "Mohamed Tharik is a software developer and entrepreneur. He is the founder of StoreSnap India, engineering high-performance digital infrastructure with absolute precision, scalability, and zero wasted motion. With a strong foundation in computer applications and systems architecture, his structural mindset drives his development practice across utility platforms including ARTRES and QuickQR.",
+    "description": "Mohamed Tharik is a software developer and entrepreneur. He is the founder of StoreSnap India, engineering high-performance digital infrastructure with absolute precision, scalability, and zero wasted motion. With a strong foundation in computer applications and systems architecture, his structural mindset drives his development practice across utility platforms including ARTRES, QuickQR, and Tethr.",
     "worksFor": {
       "@id": "https://storesnap.in/#organization"
     },
@@ -78,12 +78,23 @@
       "https://medium.com/@mdtharik563",
       "https://dev.to/md_tharik_4dfe8c4b8ab8caf"
     ],
+    "subjectOf": [
+      {
+        "@type": "Article",
+        "url": "https://chennaipatrika.com/post/young-minds-bring-science-to-life-with-real-world-solutions-at-the-unesco-cregu-ck-group-of-educational-institutions-young-scientist-technology-expo-2026"
+      },
+      {
+        "@type": "Article",
+        "url": "https://www.pninews.com/amp/young-minds-bring-science-to-life-with-real-world-solutions-at-the-unesco-cregu-ck-group-of-educational-institutions-young-scientist-technology-expo-2026/"
+      }
+    ],
     "knowsAbout": [
       "Software Development",
       "Systems Architecture",
       "E-commerce",
       "SaaS",
-      "Web Development"
+      "Web Development",
+      "Edge AI"
     ],
     "publishingPrinciples": "https://mohamedtharik.in"
   },
@@ -317,25 +328,6 @@
   .btn-ghost{ color:var(--off-white); }
   .btn-ghost:hover{ border-color:var(--off-white); }
 
-  .scroll-cue{
-    position:absolute;
-    right:6vw;bottom:36px;
-    z-index:2;
-    font-size:0.7rem;
-    letter-spacing:0.18em;
-    text-transform:uppercase;
-    color:rgba(243,241,234,0.5);
-    display:flex;
-    align-items:center;
-    gap:12px;
-  }
-  .scroll-cue::after{
-    content:'';
-    width:1px;height:38px;
-    background: rgba(243,241,234,0.35);
-    display:block;
-  }
-
   /* ---------- Logo row ---------- */
   .logo-row{
     border-top:1px solid var(--hairline-soft);
@@ -525,22 +517,51 @@
 
   /* ---------- Connect / Footer ---------- */
   .connect{ border-top:1px solid var(--hairline-soft); padding-top:min(14vw,140px); }
-  .connect-inner{ display:grid; grid-template-columns:1.2fr 1fr; gap:60px; align-items:end; }
-  .connect-title{ font-family:var(--serif); font-weight:500; font-size:clamp(2.4rem,6vw,4.4rem); line-height:1.05; }
-  .connect-links{ display:flex; flex-direction:column; gap:2px; }
+  
+  /* Changed layout to give the links more room, and aligned to start */
+  .connect-inner{ display:grid; grid-template-columns:1fr 1.8fr; gap:60px; align-items:start; }
+  
+  /* Made the title sticky so it follows you down on desktop */
+  .connect-title{ font-family:var(--serif); font-weight:500; font-size:clamp(2.4rem,6vw,4.4rem); line-height:1.05; position: sticky; top: 120px; }
+  
+  /* New Grid for categorized groups */
+  .connect-groups {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px 60px;
+  }
+  
+  .connect-group-title {
+    font-size: 0.75rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--gray);
+    margin-bottom: 12px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--hairline-soft);
+  }
+
+  .connect-links{ display:flex; flex-direction:column; gap:4px; }
   .connect-links a{
-    padding:16px 0; border-bottom:1px solid var(--hairline); display:flex;
+    padding:8px 0; border-bottom:1px solid transparent; display:flex;
     justify-content:space-between; align-items:center; font-size:0.95rem; letter-spacing:0.02em;
+    color: rgba(243,241,234,0.85);
     transition:color .3s ease, padding-left .3s ease;
   }
   .connect-links a span.arrow{opacity:0;transition:opacity .3s ease;color:var(--brass);}
-  .connect-links a:hover{color:var(--brass);padding-left:8px;}
+  .connect-links a:hover{color:var(--off-white);padding-left:8px;}
   .connect-links a:hover span.arrow{opacity:1;}
 
-  @media (max-width:800px){ .connect-inner{grid-template-columns:1fr;} }
+  @media (max-width:900px){ 
+    .connect-inner{grid-template-columns:1fr; gap:48px;} 
+    .connect-title { position: static; }
+  }
+  @media (max-width:600px){
+    .connect-groups { grid-template-columns: 1fr; gap: 40px;}
+  }
 
   footer{
-    margin-top:min(12vw,120px); padding:36px 6vw 40px; border-top:1px solid var(--hairline-soft);
+    margin-top:min(10vw,100px); padding:36px 6vw 40px; border-top:1px solid var(--hairline-soft);
     display:flex; flex-direction:column; align-items:center; gap:6px; text-align:center;
   }
   footer p{ font-size:0.82rem; color:var(--gray); }
@@ -574,7 +595,6 @@
       <a href="#connect" class="btn btn-ghost">Connect</a>
     </div>
   </div>
-  <div class="scroll-cue">Scroll</div>
 </section>
 
 <!-- LOGO ROW -->
@@ -585,6 +605,8 @@
     <span>ARTRES</span>
     <span class="dot">•</span>
     <span>QUICKQR</span>
+    <span class="dot">•</span>
+    <span>TETHR</span>
   </div>
 </div>
 
@@ -603,8 +625,8 @@
       <div class="about-body">
         <h2 class="about-query reveal" data-nosnippet>Who is Mohamed Tharik?</h2>
         <p class="reveal">Mohamed Tharik is a software developer and entrepreneur. He is the founder of StoreSnap India, engineering high-performance digital infrastructure with absolute precision, scalability, and zero wasted motion.</p>
-        <p class="reveal reveal-delay-1">With a strong foundation in computer applications and systems architecture, his structural mindset drives his development practice across utility platforms including ARTRES and QuickQR.</p>
-        <p class="reveal reveal-delay-2">Rather than adding abstraction, he removes it. Every product under his direction — from a zero-login storefront to a serverless QR engine — is built on the same conviction: the fewer moving parts standing between an idea and its user, the more powerful that idea becomes.</p>
+        <p class="reveal reveal-delay-1">With a strong foundation in computer applications and systems architecture, his structural mindset drives his development practice across utility platforms including ARTRES, QuickQR, and Tethr.</p>
+        <p class="reveal reveal-delay-2">Rather than adding abstraction, he removes it. Every product under his direction — from a zero-login storefront to an Edge AI anti-doomscroll utility — is built on the same conviction: the fewer moving parts standing between an idea and its user, the more powerful that idea becomes.</p>
 
         <div class="domain-grid reveal reveal-delay-3">
           <div class="domain-cell">
@@ -617,7 +639,7 @@
           </div>
           <div class="domain-cell">
             <span class="num">03</span>
-            <span class="label">SaaS Architecture</span>
+            <span class="label">SaaS &amp; Edge AI</span>
           </div>
           <div class="domain-cell">
             <span class="num">04</span>
@@ -657,6 +679,11 @@
           <span class="ledger-date">Mid 2026 — Scale &amp; Infrastructure</span>
           <h3 class="ledger-title">StoreSnap India</h3>
           <p class="ledger-desc">Architected and launched StoreSnap India, resolving critical checkout friction points for regional Indian merchants and giving them a direct, mobile-first path to their customers.</p>
+        </div>
+        <div class="ledger-item reveal">
+          <span class="ledger-date">Late 2026 — Edge AI &amp; Innovation</span>
+          <h3 class="ledger-title">Tethr &amp; Expo Award</h3>
+          <p class="ledger-desc">Engineered Tethr, an on-device Edge AI anti-doomscrolling system. Recognized with 2nd Prize at the UNESCO CREGU Young Scientist &amp; Technology Expo 2026.</p>
         </div>
       </div>
     </div>
@@ -702,6 +729,9 @@
         <div>
           <h3 class="venture-name">Tethr</h3>
           <p class="venture-desc">The first anti-doomscrolling utility powered by on-device Edge AI, utilizing hardware-level grayscale and adaptive cognitive friction to break algorithmic loops.</p>
+          <p class="venture-desc" style="color: var(--brass); font-weight: 500; font-size: 0.85rem; margin-top: 8px;">
+            🏆 2nd Prize Winner — <a href="https://chennaipatrika.com/post/young-minds-bring-science-to-life-with-real-world-solutions-at-the-unesco-cregu-ck-group-of-educational-institutions-young-scientist-technology-expo-2026" target="_blank" rel="noopener" style="text-decoration: underline;">UNESCO CREGU Young Scientist &amp; Technology Expo 2026</a>
+          </p>
         </div>
         <a href="https://tethrai.in" target="_blank" rel="noopener" class="venture-link">tethrai.in <span class="arrow">→</span></a>
       </div>
@@ -747,23 +777,56 @@
   <div class="wrap">
     <div class="connect-inner">
       <h2 class="connect-title reveal">Let's build<br>what's next.</h2>
-      <div class="connect-links reveal reveal-delay-1">
-        <a href="https://www.crunchbase.com/person/mohamed-tharik-f689" target="_blank" rel="noopener">Crunchbase <span class="arrow">→</span></a>
-        <a href="https://x.com/Tharik_0756" target="_blank" rel="noopener">X (Twitter) <span class="arrow">→</span></a>
-        <a href="https://www.linkedin.com/in/mohamed-tharik-6164531b7" target="_blank" rel="noopener">LinkedIn <span class="arrow">→</span></a>
-        <a href="https://github.com/Md-Tharik" target="_blank" rel="noopener">GitHub <span class="arrow">→</span></a>
-        <a href="https://wellfound.com/u/mohamed-tharik-7" target="_blank" rel="noopener">Wellfound <span class="arrow">→</span></a>
-        <a href="https://www.f6s.com/mohamed-tharik-1" target="_blank" rel="noopener">F6S <span class="arrow">→</span></a>
-        <a href="https://www.behance.net/mohamedtharik10" target="_blank" rel="noopener">Behance <span class="arrow">→</span></a>
-        <a href="https://www.producthunt.com/products/storesnap" target="_blank" rel="noopener">Product Hunt <span class="arrow">→</span></a>
-        <a href="https://youtube.com/@imthxrik" target="_blank" rel="noopener">YouTube <span class="arrow">→</span></a>
-        <a href="https://medium.com/@mdtharik563" target="_blank" rel="noopener">Medium <span class="arrow">→</span></a>
-        <a href="https://dev.to/md_tharik_4dfe8c4b8ab8caf" target="_blank" rel="noopener">Dev.to <span class="arrow">→</span></a>
-        <a href="https://www.instagram.com/im_thxrik_/" target="_blank" rel="noopener">Instagram <span class="arrow">→</span></a>
-        <a href="https://www.facebook.com/share/1DWHS7MDEc/" target="_blank" rel="noopener">Facebook <span class="arrow">→</span></a>
-        <a href="https://mohamedtharik.in/links" target="_blank" rel="noopener">Free Resources <span class="arrow">→</span></a>
-        <a href="https://mohamedtharik.in/about" target="_blank" rel="noopener">Background & Education<span class="arrow">→</span></a>
-        <a href="https://mohamedtharik.in/nect" target="_blank" rel="noopener">Nect Technologies<span class="arrow">→</span></a>
+      
+      <div class="connect-groups reveal reveal-delay-1">
+        
+        <!-- Group 1: Business & Startup -->
+        <div class="connect-group">
+          <h3 class="connect-group-title">Business &amp; Startup</h3>
+          <div class="connect-links">
+            <a href="https://www.crunchbase.com/person/mohamed-tharik-f689" target="_blank" rel="noopener">Crunchbase <span class="arrow">→</span></a>
+            <a href="https://wellfound.com/u/mohamed-tharik-7" target="_blank" rel="noopener">Wellfound <span class="arrow">→</span></a>
+            <a href="https://www.f6s.com/mohamed-tharik-1" target="_blank" rel="noopener">F6S <span class="arrow">→</span></a>
+            <a href="https://www.producthunt.com/products/storesnap" target="_blank" rel="noopener">Product Hunt <span class="arrow">→</span></a>
+            <a href="https://mohamedtharik.in/nect" target="_blank" rel="noopener">Nect Technologies <span class="arrow">→</span></a>
+          </div>
+        </div>
+
+        <!-- Group 2: Developer & Creative -->
+        <div class="connect-group">
+          <h3 class="connect-group-title">Dev &amp; Creative</h3>
+          <div class="connect-links">
+            <a href="https://github.com/Md-Tharik" target="_blank" rel="noopener">GitHub <span class="arrow">→</span></a>
+            <a href="https://www.behance.net/mohamedtharik10" target="_blank" rel="noopener">Behance <span class="arrow">→</span></a>
+            <a href="https://medium.com/@mdtharik563" target="_blank" rel="noopener">Medium <span class="arrow">→</span></a>
+            <a href="https://dev.to/md_tharik_4dfe8c4b8ab8caf" target="_blank" rel="noopener">Dev.to <span class="arrow">→</span></a>
+          </div>
+        </div>
+
+        <!-- Group 3: Social & Network -->
+        <div class="connect-group">
+          <h3 class="connect-group-title">Social &amp; Network</h3>
+          <div class="connect-links">
+            <a href="https://x.com/Tharik_0756" target="_blank" rel="noopener">X (Twitter) <span class="arrow">→</span></a>
+            <a href="https://www.linkedin.com/in/mohamed-tharik-6164531b7" target="_blank" rel="noopener">LinkedIn <span class="arrow">→</span></a>
+            <a href="https://www.instagram.com/im_thxrik_/" target="_blank" rel="noopener">Instagram <span class="arrow">→</span></a>
+            <a href="https://youtube.com/@imthxrik" target="_blank" rel="noopener">YouTube <span class="arrow">→</span></a>
+            <a href="https://www.facebook.com/share/1DWHS7MDEc/" target="_blank" rel="noopener">Facebook <span class="arrow">→</span></a>
+          </div>
+        </div>
+
+        <!-- Group 4: Press & Resources -->
+        <div class="connect-group">
+          <h3 class="connect-group-title">Press &amp; Resources</h3>
+          <div class="connect-links">
+            <a href="https://mohamedtharik.in/about" target="_blank" rel="noopener">Background &amp; Edu <span class="arrow">→</span></a>
+            <a href="https://mohamedtharik.in/links" target="_blank" rel="noopener">Free Resources <span class="arrow">→</span></a>
+            <a href="https://chennaipatrika.com/post/young-minds-bring-science-to-life-with-real-world-solutions-at-the-unesco-cregu-ck-group-of-educational-institutions-young-scientist-technology-expo-2026" target="_blank" rel="noopener">Chennai Patrika <span class="arrow">→</span></a>
+            <a href="https://www.pninews.com/amp/young-minds-bring-science-to-life-with-real-world-solutions-at-the-unesco-cregu-ck-group-of-educational-institutions-young-scientist-technology-expo-2026/" target="_blank" rel="noopener">PNI News <span class="arrow">→</span></a>
+            <a href="https://dailyventuremedia.blogspot.com" target="_blank" rel="noopener">DVM-Blog <span class="arrow">→</span></a>
+          </div>
+        </div>
+
       </div>
     </div>
   </div>
